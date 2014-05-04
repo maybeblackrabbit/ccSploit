@@ -106,7 +106,7 @@ def main():
 	results = parser.parse_args()
 	domain = results.domain
 	if results.shop:
-		domain = domain + "/shop/"
+		domain = domain + "/shop"
 	print "\n[+] Scanning: " + domain
 	findSploit(domain,htmlparse)
 
