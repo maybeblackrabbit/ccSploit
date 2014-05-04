@@ -10,6 +10,7 @@ This python script exploits two fraudulent "auto-selling" credit card shop sourc
 python ccSploit.py -u "url here"
 
 If the url is in a /shop/ directory then do:
+<br>
 python ccSploit.py -u "url here" --shop
 
-Please use Python 2.7.  If you're using Python 3 I highly doubt this will work for obvious reasons (view source).
+<h4><b>Please use Python 2.7.  If you're using Python 3 I highly doubt this will work for obvious reasons (view source).</b></h4>
