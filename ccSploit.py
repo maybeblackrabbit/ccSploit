@@ -14,15 +14,14 @@ class MyHTMLParser(HTMLParser):
 
 htmlparse = MyHTMLParser()
 
-adminLog = []
-wsoUpload = []
-sqlInject = []
-sqlFiles = []
-paygateFiles= []
-cookieFiles = []
-sensitiveFiles = []
-
-def findSploit(sqlInject,sqlFiles,paygateFiles,cookieFiles,sensitiveFiles,domain,htmlparse):
+def findSploit(domain,htmlparse):
+	adminLog = []
+	wsoUpload = []
+	sqlInject = []
+	sqlFiles = []
+	paygateFiles= []
+	cookieFiles = []
+	sensitiveFiles = []
 	print "\n[+] Scan for: " + domain + " has started."
 	domain = "http://" + domain
 	adminPages = ["/admin/", "/admin/c"]
@@ -109,7 +108,7 @@ def main():
 	if results.shop:
 		domain = domain + "/shop/"
 	print "\n[+] Scanning: " + domain
-	findSploit(sqlInject,sqlFiles,paygateFiles,cookieFiles,sensitiveFiles,domain,htmlparse)
+	findSploit(domain,htmlparse)
 
 if __name__ == '__main__':
 	main()
