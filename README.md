@@ -6,7 +6,7 @@ Python script to exploit fraudulent "auto-selling" credit card shops.
 The script "ccSploit.py" affects two of these card shop scripts known as "Vampire" and "Heaven".
 
 Usage:
-python ccSploit.py -u <url>
+python ccSploit.py -u "url here"
 
 If the url is in a /shop/ directory then do:
-python ccSploit.py -u <url> --shop
+python ccSploit.py -u "url here" --shop
